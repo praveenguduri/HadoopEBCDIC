@@ -17,10 +17,11 @@ cb2xc2j {copybookfile}
 Code supports multi layout copybook
 
 
+sample x2cj file 
+
 < FileFormat ConversionTable="Cp037"
   dataFileImplementation="RecTypeOffset~13~2" distinguishFieldSize="4" newLineSize="0">
-    < RecordFormat cobolRecordName="RECORD-TYPE-1" distinguishFieldValue="AB">
-     
+    < RecordFormat cobolRecordName="RECORD-TYPE-1" distinguishFieldValue="AB">     
      ....
       ...
 
