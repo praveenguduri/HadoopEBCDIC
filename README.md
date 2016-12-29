@@ -1,5 +1,5 @@
 # HadoopEBCDIC
-Parse Mainframe EBCDIC Files using Hadoop
+Parse Mainframe EBCDIC Files with copybook in hadoop
 
 The program uses cobol2j to parse the mainframe files.
 
