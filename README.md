@@ -19,7 +19,7 @@ Code supports multi layout copybook
 
 < FileFormat ConversionTable="Cp037"
   dataFileImplementation="RecTypeOffset~13~2" distinguishFieldSize="4" newLineSize="0">
-     
+  
      < RecordFormat cobolRecordName="RECORD-TYPE-1" distinguishFieldValue="AB">
      
      ....
