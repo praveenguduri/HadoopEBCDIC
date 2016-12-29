@@ -24,6 +24,7 @@ import javax.xml.bind.*;
 import net.sf.cobol2j.FileFormat;
 import net.sf.cobol2j.RecordParseException;
 import net.sf.cobol2j.RecordSet;
+import net.sf.cobol2j.ObjectFactory;
 
 public class EBCDICRecordReader implements RecordReader<LongWritable, Text> 
 {
