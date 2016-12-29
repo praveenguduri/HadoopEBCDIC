@@ -8,25 +8,24 @@ https://github.com/kinow/cobol2js
 
 command to execute in MR.
 
-hadoop jar EBCDICInputFormat.jar com.ebcdic.mainframe.examples.EBCDICDriver "InputFile" "OutFile" {CopyBook x2cj}
+    hadoop jar EBCDICInputFormat.jar com.ebcdic.mainframe.examples.EBCDICDriver "InputFile" "OutFile" {CopyBook x2cj}
 
 use cb2xml to generate x2cj copybook file.
 
-cb2xc2j {copybookfile}
+    cb2xc2j {copybookfile}
 
 Code supports multi layout copybook
 
 
 sample x2cj file 
 
-< FileFormat ConversionTable="Cp037"
-  dataFileImplementation="RecTypeOffset~13~2" distinguishFieldSize="4" newLineSize="0">
-    < RecordFormat cobolRecordName="RECORD-TYPE-1" distinguishFieldValue="AB">     
+     < FileFormat ConversionTable="Cp037" dataFileImplementation="RecTypeOffset~13~2" distinguishFieldSize="4" newLineSize="0">
+        < RecordFormat cobolRecordName="RECORD-TYPE-1" distinguishFieldValue="AB">     
      ....
       ...
 
-dataFileImplementation is used to define the byte position to identify the record type.
+    dataFileImplementation is used to define the byte position to identify the record type.
 
-distinguishFieldValue - Record Type Value
+      distinguishFieldValue - Record Type Value
 
-distinguishFieldSize-   Record Type size in bytes
+      distinguishFieldSize-   Record Type size in bytes
