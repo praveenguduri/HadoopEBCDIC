@@ -19,8 +19,10 @@ Code supports multi layout copybook
 
 < FileFormat ConversionTable="Cp037"
   dataFileImplementation="RecTypeOffset~13~2" distinguishFieldSize="4" newLineSize="0">
-      < RecordFormat cobolRecordName="RECORD-TYPE-1" distinguishFieldValue="AB">
-      ....
+     
+     < RecordFormat cobolRecordName="RECORD-TYPE-1" distinguishFieldValue="AB">
+     
+     ....
       ...
 
 dataFileImplementation is used to define the byte position to identify the record type.
