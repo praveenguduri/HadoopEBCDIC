@@ -26,5 +26,7 @@ sample x2cj file
       ...
 
 dataFileImplementation is used to define the byte position to identify the record type.
+
 distinguishFieldValue - Record Type Value
+
 distinguishFieldSize-   Record Type size in bytes
