@@ -53,8 +53,7 @@ public class EBCDICRecordReader implements RecordReader<LongWritable, Text>
 
 	          if (mrwork == null)
 	          {
-	            System.out.println("When running a client side hive job you have to set \"copybook.inputformat.cbl.hdfs.path\" before executing the query." );
-	            System.out.println("When running a MR job we can get this from the hive TBLProperties" );
+	            System.out.println("Missing Paths");
 	          }
 	          Map<String, PartitionDesc> map = mrwork.getPathToPartitionInfo();
 	          
@@ -71,7 +70,8 @@ public class EBCDICRecordReader implements RecordReader<LongWritable, Text>
 	      FileSystem fs = FileSystem.get(job);
 	      inputStream = new BufferedInputStream(
 	          fs.open(new Path(cblPath)));
-	      JAXBContext contextjx = JAXBContext.newInstance("net.sf.cobol2j");
+	      JAXBContext contextjx = JAXBContext contextjx = JAXBContext.newInstance(net.sf.cobol2j.ObjectFactory.class.getPackage().getName(),
+	        		 net.sf.cobol2j.ObjectFactory.class.getClassLoader());
 			Unmarshaller unmarshaller = contextjx.createUnmarshaller();
 			Object o = unmarshaller.unmarshal(inputStream);
 			FileFormat fF = (FileFormat) o;			
